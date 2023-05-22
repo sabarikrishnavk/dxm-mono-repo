@@ -1,9 +1,8 @@
-import { Button, Header } from "dxm-ui-component";
+
 
 export default function Page() {
   return (
     <>
-      <Header text="Status of apps" />
       Status of each application is displayed Header<br />
 
       ecom : Multi tenant website (Set different header to visit different websites)<br />

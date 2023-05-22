@@ -1,10 +1,18 @@
-import { Button, Header } from "dxm-ui-component";
+import { Button, Header, ProductCard, CartCard } from "dxm-ui-component";
+import { Metadata } from 'next';
 
+
+export const metadata: Metadata = { 'title': 'Home Page', 'description': 'Home Page desc' };
 export default function Page() {
   return (
     <>
-      <Header text="Web" />
-      <Button />
+      <Header theme="ecom" />
+
+      <body>
+        <Button />
+        <ProductCard theme="site1" />
+        <CartCard theme="site1" />
+      </body>
     </>
   );
 }
