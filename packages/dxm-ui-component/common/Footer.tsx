@@ -5,11 +5,10 @@ interface Props {
   theme?: String;
 }
 
-export const {{ pascalCase name }} = ({ children , theme }: Props) => {
+export const Footer = ({ children , theme}: Props ) => {
   return (
     <div>
-
-      <h1>{{ name }} for {theme}</h1>
+      <h1>Footer for {theme}</h1>
       {children}
     </div>
   );
