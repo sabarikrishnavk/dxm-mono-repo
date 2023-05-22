@@ -20,8 +20,85 @@ importers:
         specifier: ^1.9.7
         version: 1.9.7
 
+  apps/admin:
+    dependencies:
+      dxm-ui-component:
+        specifier: workspace:*
+        version: link:../../packages/dxm-ui-component
+      dxm-util:
+        specifier: workspace:*
+        version: link:../../packages/dxm-util
+      next:
+        specifier: ^13.4.1
+        version: 13.4.1(react-dom@18.2.0)(react@18.2.0)
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+    devDependencies:
+      '@types/node':
+        specifier: ^17.0.12
+        version: 17.0.45
+      '@types/react':
+        specifier: ^18.0.22
+        version: 18.2.5
+      '@types/react-dom':
+        specifier: ^18.0.7
+        version: 18.2.3
+      eslint-config-custom:
+        specifier: workspace:*
+        version: link:../../packages/eslint-config-custom
+      tsconfig:
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
+      typescript:
+        specifier: ^4.5.3
+        version: 4.9.5
+
+  apps/csr:
+    dependencies:
+      dxm-ui-component:
+        specifier: workspace:*
+        version: link:../../packages/dxm-ui-component
+      next:
+        specifier: ^13.4.1
+        version: 13.4.1(react-dom@18.2.0)(react@18.2.0)
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+    devDependencies:
+      '@types/node':
+        specifier: ^17.0.12
+        version: 17.0.45
+      '@types/react':
+        specifier: ^18.0.22
+        version: 18.2.5
+      '@types/react-dom':
+        specifier: ^18.0.7
+        version: 18.2.3
+      eslint-config-custom:
+        specifier: workspace:*
+        version: link:../../packages/eslint-config-custom
+      tsconfig:
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
+      typescript:
+        specifier: ^4.5.3
+        version: 4.9.5
+
   apps/docs:
     dependencies:
+      dxm-ui-component:
+        specifier: workspace:*
+        version: link:../../packages/dxm-ui-component
+      dxm-util:
+        specifier: workspace:*
+        version: link:../../packages/dxm-util
       next:
         specifier: ^13.4.1
         version: 13.4.1(react-dom@18.2.0)(react@18.2.0)
@@ -31,9 +108,6 @@ importers:
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
-      ui:
-        specifier: workspace:*
-        version: link:../../packages/ui
     devDependencies:
       '@types/node':
         specifier: ^17.0.12
@@ -54,8 +128,14 @@ importers:
         specifier: ^4.5.3
         version: 4.9.5
 
-  apps/web:
+  apps/ecom:
     dependencies:
+      dxm-ui-component:
+        specifier: workspace:*
+        version: link:../../packages/dxm-ui-component
+      dxm-util:
+        specifier: workspace:*
+        version: link:../../packages/dxm-util
       next:
         specifier: ^13.4.1
         version: 13.4.1(react-dom@18.2.0)(react@18.2.0)
@@ -65,9 +145,6 @@ importers:
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
-      ui:
-        specifier: workspace:*
-        version: link:../../packages/ui
     devDependencies:
       '@types/node':
         specifier: ^17.0.12
@@ -88,24 +165,7 @@ importers:
         specifier: ^4.5.3
         version: 4.9.5
 
-  packages/eslint-config-custom:
-    dependencies:
-      eslint-config-next:
-        specifier: ^13.4.1
-        version: 13.4.1(eslint@7.32.0)(typescript@4.9.5)
-      eslint-config-prettier:
-        specifier: ^8.3.0
-        version: 8.8.0(eslint@7.32.0)
-      eslint-config-turbo:
-        specifier: ^1.9.3
-        version: 1.9.3(eslint@7.32.0)
-      eslint-plugin-react:
-        specifier: 7.28.0
-        version: 7.28.0(eslint@7.32.0)
-
-  packages/tsconfig: {}
-
-  packages/ui:
+  packages/dxm-ui-component:
     devDependencies:
       '@types/react':
         specifier: ^18.2.0
@@ -128,6 +188,47 @@ importers:
       typescript:
         specifier: ^4.5.2
         version: 4.9.5
+
+  packages/dxm-util:
+    devDependencies:
+      '@types/react':
+        specifier: ^18.2.0
+        version: 18.2.5
+      '@types/react-dom':
+        specifier: ^18.2.0
+        version: 18.2.3
+      eslint:
+        specifier: ^7.32.0
+        version: 7.32.0
+      eslint-config-custom:
+        specifier: workspace:*
+        version: link:../eslint-config-custom
+      react:
+        specifier: ^17.0.2
+        version: 17.0.2
+      tsconfig:
+        specifier: workspace:*
+        version: link:../tsconfig
+      typescript:
+        specifier: ^4.5.2
+        version: 4.9.5
+
+  packages/eslint-config-custom:
+    dependencies:
+      eslint-config-next:
+        specifier: ^13.4.1
+        version: 13.4.1(eslint@7.32.0)(typescript@4.9.5)
+      eslint-config-prettier:
+        specifier: ^8.3.0
+        version: 8.8.0(eslint@7.32.0)
+      eslint-config-turbo:
+        specifier: ^1.9.3
+        version: 1.9.3(eslint@7.32.0)
+      eslint-plugin-react:
+        specifier: 7.28.0
+        version: 7.28.0(eslint@7.32.0)
+
+  packages/tsconfig: {}
 
 packages:
 
@@ -1153,6 +1254,7 @@ packages:
 
   /eslint-config-prettier@8.8.0(eslint@7.32.0):
     resolution: {integrity: sha512-wLbQiFre3tdGgpDv67NQKnJuTlcUVYHas3k+DZCc2U2BadthoEY4B7hLPvAxaqdyOGCzuLfii2fqGph10va7oA==}
+    hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
     dependencies:
@@ -1383,6 +1485,7 @@ packages:
   /eslint@7.32.0:
     resolution: {integrity: sha512-VHZ8gX+EDfz+97jGcgyGCyRia/dPOd6Xh9yPv8Bl1+SoaIwD+a/vlrOmGRUyOYu7MwUhc7CxqeaDZU13S4+EpA==}
     engines: {node: ^10.12.0 || >=12.0.0}
+    hasBin: true
     dependencies:
       '@babel/code-frame': 7.12.11
       '@eslint/eslintrc': 0.4.3
@@ -2171,6 +2274,7 @@ packages:
 
   /loose-envify@1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
+    hasBin: true
     dependencies:
       js-tokens: 4.0.0
 
@@ -2253,6 +2357,7 @@ packages:
   /nanoid@3.3.6:
     resolution: {integrity: sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
     dev: false
 
   /natural-compare@1.4.0:
@@ -2265,6 +2370,7 @@ packages:
   /next@13.4.1(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-JBw2kAIyhKDpjhEWvNVoFeIzNp9xNxg8wrthDOtMctfn3EpqGCmW0FSviNyGgOSOSn6zDaX48pmvbdf6X2W9xA==}
     engines: {node: '>=16.8.0'}
+    hasBin: true
     peerDependencies:
       '@opentelemetry/api': ^1.1.0
       fibers: '>= 3.1.0'
@@ -2998,6 +3104,7 @@ packages:
 
   /ts-node@10.9.1(@types/node@17.0.45)(typescript@4.9.5):
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
+    hasBin: true
     peerDependencies:
       '@swc/core': '>=1.2.50'
       '@swc/wasm': '>=1.2.50'
