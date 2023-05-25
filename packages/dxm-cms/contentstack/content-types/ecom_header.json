@@ -1,0 +1,178 @@
+{
+  "created_at": "2023-05-23T23:34:03.981Z",
+  "updated_at": "2023-05-25T12:03:56.401Z",
+  "title": "eCom-Header",
+  "uid": "ecom_header",
+  "_version": 4,
+  "inbuilt_class": false,
+  "schema": [
+    {
+      "display_name": "Title",
+      "uid": "title",
+      "data_type": "text",
+      "mandatory": true,
+      "unique": true,
+      "field_metadata": { "_default": true, "version": 3 },
+      "multiple": false,
+      "non_localizable": false
+    },
+    {
+      "data_type": "group",
+      "display_name": "HeaderGroup",
+      "field_metadata": { "description": "HeaderRow", "instruction": "" },
+      "schema": [
+        {
+          "data_type": "file",
+          "display_name": "logo",
+          "uid": "logo",
+          "field_metadata": {
+            "description": "",
+            "rich_text_type": "standard",
+            "image": true
+          },
+          "multiple": false,
+          "mandatory": true,
+          "unique": false,
+          "non_localizable": false,
+          "dimension": {
+            "width": { "min": null, "max": null },
+            "height": { "min": null, "max": null }
+          }
+        },
+        {
+          "data_type": "global_field",
+          "display_name": "Search Box",
+          "reference_to": "searchbox",
+          "field_metadata": { "description": "" },
+          "uid": "search_box",
+          "mandatory": false,
+          "multiple": false,
+          "non_localizable": false,
+          "unique": false
+        },
+        {
+          "data_type": "group",
+          "display_name": "header_link",
+          "field_metadata": { "description": "", "instruction": "" },
+          "schema": [
+            {
+              "data_type": "global_field",
+              "display_name": "xlink",
+              "reference_to": "xlink",
+              "field_metadata": { "description": "" },
+              "uid": "xlink",
+              "mandatory": false,
+              "multiple": true,
+              "non_localizable": false,
+              "unique": false,
+              "max_instance": 4
+            }
+          ],
+          "uid": "header_ink",
+          "mandatory": false,
+          "multiple": false,
+          "non_localizable": false,
+          "unique": false
+        }
+      ],
+      "uid": "headerrow",
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "group",
+      "display_name": "NavigationGroup",
+      "field_metadata": {},
+      "schema": [
+        {
+          "data_type": "reference",
+          "display_name": "menu",
+          "reference_to": ["ecom_menu"],
+          "field_metadata": {
+            "ref_multiple": true,
+            "ref_multiple_content_types": true
+          },
+          "uid": "menu",
+          "mandatory": false,
+          "multiple": false,
+          "non_localizable": false,
+          "unique": false
+        },
+        {
+          "data_type": "global_field",
+          "display_name": "xlink",
+          "reference_to": "xlink",
+          "field_metadata": { "description": "" },
+          "uid": "xlink",
+          "mandatory": false,
+          "multiple": true,
+          "non_localizable": false,
+          "unique": false
+        }
+      ],
+      "uid": "navigation_menu",
+      "multiple": true,
+      "mandatory": false,
+      "unique": false,
+      "non_localizable": false,
+      "max_instance": 10
+    },
+    {
+      "data_type": "group",
+      "display_name": "AnnouncementGroup",
+      "field_metadata": { "description": "", "instruction": "" },
+      "schema": [
+        {
+          "data_type": "text",
+          "display_name": "richtext",
+          "uid": "richtext",
+          "field_metadata": {
+            "allow_rich_text": true,
+            "description": "",
+            "multiline": false,
+            "rich_text_type": "advanced",
+            "options": [],
+            "embed_entry": false,
+            "version": 3
+          },
+          "mandatory": false,
+          "multiple": false,
+          "non_localizable": false,
+          "unique": false
+        }
+      ],
+      "uid": "announcementgroup",
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    }
+  ],
+  "last_activity": {},
+  "maintain_revisions": true,
+  "description": "It contains the company logo, main navigation",
+  "DEFAULT_ACL": [
+    { "k": "others", "v": { "read": false, "create": false } },
+    {
+      "k": "users.blt479be4d3a41267d2",
+      "v": { "read": true, "sub_acl": { "read": true } }
+    }
+  ],
+  "SYS_ACL": { "roles": [] },
+  "options": {
+    "is_page": false,
+    "singleton": false,
+    "title": "title",
+    "sub_title": []
+  },
+  "abilities": {
+    "get_one_object": true,
+    "get_all_objects": true,
+    "create_object": true,
+    "update_object": true,
+    "delete_object": true,
+    "delete_all_objects": true
+  }
+}

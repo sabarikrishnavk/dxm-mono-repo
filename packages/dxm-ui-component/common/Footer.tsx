@@ -1,11 +1,7 @@
 import * as React from "react";
+import { FooterProps } from "../model/HtmlElement";
 
-interface Props {
-  children?: React.ReactNode;
-  theme?: String;
-}
-
-export const Footer = ({ children , theme}: Props ) => {
+export const Footer = ({ children, theme }: FooterProps) => {
   return (
     <div>
       <h1>Footer for {theme}</h1>

@@ -1,0 +1,115 @@
+{
+  "created_at": "2023-05-23T23:33:56.878Z",
+  "updated_at": "2023-05-23T23:40:58.702Z",
+  "title": "eCom-Menu",
+  "uid": "ecom_menu",
+  "_version": 2,
+  "inbuilt_class": false,
+  "schema": [
+    {
+      "data_type": "text",
+      "display_name": "Title",
+      "field_metadata": { "_default": true, "version": 3 },
+      "mandatory": true,
+      "uid": "title",
+      "unique": true,
+      "multiple": false,
+      "non_localizable": false
+    },
+    {
+      "data_type": "text",
+      "display_name": "image-icon",
+      "uid": "image_icon",
+      "field_metadata": {
+        "description": "image icon class name as per css in design system",
+        "default_value": "",
+        "placeholder": "",
+        "version": 3
+      },
+      "format": "",
+      "error_messages": { "format": "" },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "boolean",
+      "display_name": "isvertical",
+      "uid": "isvertical",
+      "field_metadata": {
+        "description": "Display Menu as dropdown else expand towards right",
+        "default_value": false
+      },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "text",
+      "display_name": "classname",
+      "uid": "classname",
+      "field_metadata": {
+        "description": "",
+        "default_value": "",
+        "version": 3
+      },
+      "format": "",
+      "error_messages": { "format": "" },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "text",
+      "display_name": "URL",
+      "uid": "url",
+      "field_metadata": { "_default": true, "version": 3 },
+      "multiple": false,
+      "unique": false,
+      "mandatory": false,
+      "non_localizable": false
+    },
+    {
+      "data_type": "global_field",
+      "display_name": "children",
+      "reference_to": "menu",
+      "field_metadata": { "description": "" },
+      "uid": "children",
+      "mandatory": false,
+      "multiple": true,
+      "non_localizable": false,
+      "unique": false,
+      "max_instance": 6
+    }
+  ],
+  "last_activity": {},
+  "maintain_revisions": true,
+  "description": "Menu for different headers",
+  "DEFAULT_ACL": [
+    { "k": "others", "v": { "read": false, "create": false } },
+    {
+      "k": "users.blt479be4d3a41267d2",
+      "v": { "read": true, "sub_acl": { "read": true } }
+    }
+  ],
+  "SYS_ACL": { "roles": [] },
+  "options": {
+    "is_page": true,
+    "singleton": false,
+    "sub_title": [],
+    "title": "title",
+    "url_pattern": "/:title",
+    "url_prefix": "/"
+  },
+  "abilities": {
+    "get_one_object": true,
+    "get_all_objects": true,
+    "create_object": true,
+    "update_object": true,
+    "delete_object": true,
+    "delete_all_objects": true
+  }
+}

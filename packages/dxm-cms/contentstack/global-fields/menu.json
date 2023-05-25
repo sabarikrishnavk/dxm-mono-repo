@@ -1,0 +1,70 @@
+{
+  "created_at": "2023-05-23T23:37:04.678Z",
+  "updated_at": "2023-05-23T23:42:29.971Z",
+  "title": "Menu",
+  "uid": "menu",
+  "_version": 4,
+  "inbuilt_class": false,
+  "schema": [
+    {
+      "data_type": "link",
+      "display_name": "url",
+      "uid": "url",
+      "field_metadata": {
+        "description": "",
+        "default_value": { "title": "", "url": "" }
+      },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "text",
+      "display_name": "classname",
+      "uid": "classname",
+      "field_metadata": {
+        "description": "css classname",
+        "default_value": "",
+        "version": 3
+      },
+      "format": "",
+      "error_messages": { "format": "" },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "boolean",
+      "display_name": "isvertical",
+      "uid": "isvertical",
+      "field_metadata": {
+        "description": "Display Menu as dropdown else expand towards right",
+        "default_value": false
+      },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "display_name": "children",
+      "extension_uid": "blt76c22bada6fca844",
+      "field_metadata": {
+        "extension": true,
+        "description": "enter menu elements for children"
+      },
+      "uid": "children",
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false,
+      "config": {},
+      "data_type": "json"
+    }
+  ],
+  "last_activity": {},
+  "maintain_revisions": true,
+  "description": "Menu field"
+}

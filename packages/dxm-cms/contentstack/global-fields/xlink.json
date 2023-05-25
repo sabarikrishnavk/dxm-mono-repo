@@ -1,0 +1,72 @@
+{
+  "created_at": "2023-05-23T13:16:20.197Z",
+  "updated_at": "2023-05-23T13:18:50.261Z",
+  "title": "xLink",
+  "uid": "xlink",
+  "_version": 3,
+  "inbuilt_class": false,
+  "schema": [
+    {
+      "data_type": "boolean",
+      "display_name": "isAuthenticated",
+      "uid": "isauthenticated",
+      "field_metadata": {
+        "description": "Is Authentication required to enable this link?",
+        "default_value": false
+      },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "link",
+      "display_name": "url",
+      "uid": "url",
+      "field_metadata": {
+        "description": "",
+        "default_value": { "title": "", "url": "" }
+      },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "text",
+      "display_name": "classname",
+      "uid": "classname",
+      "field_metadata": {
+        "description": "CSS class name to display icon for overlay",
+        "default_value": "",
+        "version": 3
+      },
+      "format": "",
+      "error_messages": { "format": "" },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "text",
+      "display_name": "richtext",
+      "uid": "richtext",
+      "field_metadata": {
+        "allow_rich_text": true,
+        "description": "",
+        "multiline": false,
+        "rich_text_type": "advanced",
+        "options": [],
+        "version": 3
+      },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    }
+  ],
+  "last_activity": {},
+  "maintain_revisions": true,
+  "description": "Create Link with image icon, url and text"
+}

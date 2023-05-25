@@ -1,0 +1,102 @@
+{
+  "created_at": "2023-05-23T13:39:13.922Z",
+  "updated_at": "2023-05-24T00:53:16.754Z",
+  "title": "HeroBanner",
+  "uid": "herobanner",
+  "_version": 3,
+  "inbuilt_class": false,
+  "schema": [
+    {
+      "data_type": "file",
+      "display_name": "Image",
+      "uid": "image",
+      "extensions": [],
+      "field_metadata": { "description": "", "rich_text_type": "standard" },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "text",
+      "display_name": "Description",
+      "uid": "description",
+      "field_metadata": {
+        "description": "",
+        "default_value": "",
+        "multiline": true,
+        "version": 3
+      },
+      "format": "",
+      "error_messages": { "format": "" },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "link",
+      "display_name": "Link",
+      "uid": "link",
+      "field_metadata": {
+        "description": "",
+        "default_value": { "title": "", "url": "" }
+      },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "text",
+      "display_name": "OverlayText",
+      "uid": "overlaytext",
+      "field_metadata": {
+        "description": "Overlay Text for hero banner",
+        "default_value": "",
+        "version": 3
+      },
+      "format": "",
+      "error_messages": { "format": "" },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "text",
+      "display_name": "TextClassName",
+      "uid": "textclassname",
+      "field_metadata": {
+        "description": "",
+        "default_value": "",
+        "version": 3
+      },
+      "format": "",
+      "error_messages": { "format": "" },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "text",
+      "display_name": "ImageClassName",
+      "uid": "imageclassname",
+      "field_metadata": {
+        "description": "Image class name for alignment",
+        "default_value": "",
+        "version": 3
+      },
+      "format": "",
+      "error_messages": { "format": "" },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    }
+  ],
+  "last_activity": {},
+  "maintain_revisions": true,
+  "description": "Hero Banner Field"
+}
