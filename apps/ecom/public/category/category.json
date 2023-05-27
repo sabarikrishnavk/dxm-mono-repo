@@ -1,0 +1,1475 @@
+[
+  {
+    "name": "Red Wine",
+    "url": "/red-wine",
+    "navigationItems": [
+      {
+        "id": "9a0d088b-d754-4276-b06b-631ca0ff8878",
+        "title": "Grape Variety",
+        "facets": [
+          {
+            "title": "Shiraz",
+            "itemCount": 291,
+            "url": "/red-wine/shiraz",
+            "isSelected": false
+          },
+          {
+            "title": "Cabernet Sauvignon",
+            "itemCount": 169,
+            "url": "/red-wine/cabernet-sauvignon",
+            "isSelected": false
+          },
+          {
+            "title": "Pinot Noir",
+            "itemCount": 148,
+            "url": "/red-wine/pinot-noir",
+            "isSelected": false
+          },
+          {
+            "title": "Red Blends",
+            "itemCount": 56,
+            "url": "/red-wine/red-blend,",
+            "isSelected": false
+          },
+          {
+            "title": "Merlot",
+            "itemCount": 63,
+            "url": "/red-wine/merlot",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": {
+          "title": "more",
+          "url": "/red-wine?fh_maxdisplaynrvalues_categories=-1"
+        },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": "7235ef63-9126-4433-9845-73605d2edb38",
+        "title": "Region",
+        "facets": [
+          {
+            "title": "Barossa",
+            "itemCount": 96,
+            "url": "/red-wine/barossa-region",
+            "isSelected": false
+          },
+          {
+            "title": "Coonawarra",
+            "itemCount": 31,
+            "url": "/red-wine/coonawarra-region",
+            "isSelected": false
+          },
+          {
+            "title": "Mclaren Vale",
+            "itemCount": 41,
+            "url": "/red-wine/mclaren-vale-region",
+            "isSelected": false
+          },
+          {
+            "title": "Margaret River",
+            "itemCount": 24,
+            "url": "/red-wine/margaret-river-region",
+            "isSelected": false
+          },
+          {
+            "title": "Clare Valley",
+            "itemCount": 17,
+            "url": "/red-wine/clare-valley-region",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": {
+          "title": "more",
+          "url": "/red-wine?fh_maxdisplaynrvalues_region=-1"
+        },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": "b915a103-b213-4941-b2a5-61952bb7dcf0",
+        "title": "Country",
+        "facets": [
+          {
+            "title": "Australia",
+            "itemCount": 723,
+            "url": "/red-wine/australia-wines",
+            "isSelected": false
+          },
+          {
+            "title": "Spain",
+            "itemCount": 23,
+            "url": "/red-wine/spain-wines",
+            "isSelected": false
+          },
+          {
+            "title": "Italy",
+            "itemCount": 17,
+            "url": "/red-wine/italy-wines",
+            "isSelected": false
+          },
+          {
+            "title": "Argentina",
+            "itemCount": 15,
+            "url": "/red-wine/argentina-wines",
+            "isSelected": false
+          },
+          {
+            "title": "France",
+            "itemCount": 14,
+            "url": "/red-wine/france-wines",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": {
+          "title": "more",
+          "url": "/red-wine?fh_maxdisplaynrvalues_origin_country=-1"
+        },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": "d569496c-4c42-4401-a4ab-f434cdb6373e",
+        "title": "Brand",
+        "facets": [
+          {
+            "title": "Wolf Blass",
+            "itemCount": 10,
+            "url": "/red-wine/wolf-blass-range",
+            "isSelected": false
+          },
+          {
+            "title": "Jacob's Creek",
+            "itemCount": 15,
+            "url": "/red-wine/jacob27s-creek-range",
+            "isSelected": false
+          },
+          {
+            "title": "Zilzie",
+            "itemCount": 6,
+            "url": "/red-wine/zilzie-range",
+            "isSelected": false
+          },
+          {
+            "title": "Hardys",
+            "itemCount": 12,
+            "url": "/red-wine/hardys-range",
+            "isSelected": false
+          },
+          {
+            "title": "Taylors",
+            "itemCount": 14,
+            "url": "/red-wine/taylors-range",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": {
+          "title": "more",
+          "url": "/red-wine?fh_maxdisplaynrvalues_brand=-1"
+        },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": "45c427af-0198-4cd7-80c2-f53d722ab2f4",
+        "title": "Price Range",
+        "facets": [
+          {
+            "title": "Below $10",
+            "itemCount": 60,
+            "url": "/red-wine/under-10-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$10 - $20",
+            "itemCount": 245,
+            "url": "/red-wine/10-to-20-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$20 - $30",
+            "itemCount": 283,
+            "url": "/red-wine/20-to-30-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$30 - $50",
+            "itemCount": 160,
+            "url": "/red-wine/30-to-50-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$50 - $100",
+            "itemCount": 47,
+            "url": "/red-wine/50-to-100-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$100 - $500",
+            "itemCount": 33,
+            "url": "/red-wine/100-to-500-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "Above $500",
+            "itemCount": 5,
+            "url": "/red-wine/over-500-dollars",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": { "title": null, "url": null },
+        "less": { "title": null, "url": null }
+      }
+    ],
+    "isProductCategory": true,
+    "requestId": "1a195788-567a-4999-bacb-5c36528e473f"
+  },
+  {
+    "name": "White Wine",
+    "url": "/white-wine",
+    "navigationItems": [
+      {
+        "id": "f062a766-cfaa-4eb4-b697-4b4c1db41d30",
+        "title": "Grape Variety",
+        "facets": [
+          {
+            "title": "Sauvignon Blanc",
+            "itemCount": 141,
+            "url": "/white-wine/sauvignon-blanc",
+            "isSelected": false
+          },
+          {
+            "title": "Pinot Gris or Grigio",
+            "itemCount": 106,
+            "url": "/white-wine/pinot-grigio-or-gris,",
+            "isSelected": false
+          },
+          {
+            "title": "Chardonnay",
+            "itemCount": 177,
+            "url": "/white-wine/chardonnay",
+            "isSelected": false
+          },
+          {
+            "title": "Riesling",
+            "itemCount": 46,
+            "url": "/white-wine/riesling",
+            "isSelected": false
+          },
+          {
+            "title": "White Blends",
+            "itemCount": 33,
+            "url": "/white-wine/white-blends,",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": {
+          "title": "more",
+          "url": "/white-wine?fh_maxdisplaynrvalues_categories=-1"
+        },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": "445bf9fe-5d69-4ffe-908e-d43e65098460",
+        "title": "Region",
+        "facets": [
+          {
+            "title": "Marlborough",
+            "itemCount": 40,
+            "url": "/white-wine/marlborough-region",
+            "isSelected": false
+          },
+          {
+            "title": "Margaret River",
+            "itemCount": 32,
+            "url": "/white-wine/margaret-river-region",
+            "isSelected": false
+          },
+          {
+            "title": "Adelaide Hills",
+            "itemCount": 18,
+            "url": "/white-wine/adelaide-hills-region",
+            "isSelected": false
+          },
+          {
+            "title": "Clare Valley",
+            "itemCount": 14,
+            "url": "/white-wine/clare-valley-region",
+            "isSelected": false
+          },
+          {
+            "title": "Yarra Valley",
+            "itemCount": 38,
+            "url": "/white-wine/yarra-valley-region",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": {
+          "title": "more",
+          "url": "/white-wine?fh_maxdisplaynrvalues_region=-1"
+        },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": "d28b8b26-494e-400c-b2c9-4b5fb70b076b",
+        "title": "Country",
+        "facets": [
+          {
+            "title": "Australia",
+            "itemCount": 443,
+            "url": "/white-wine/australia-wines",
+            "isSelected": false
+          },
+          {
+            "title": "New Zealand",
+            "itemCount": 56,
+            "url": "/white-wine/new-zealand-wines",
+            "isSelected": false
+          },
+          {
+            "title": "Italy",
+            "itemCount": 17,
+            "url": "/white-wine/italy-wines",
+            "isSelected": false
+          },
+          {
+            "title": "Greece",
+            "itemCount": 9,
+            "url": "/white-wine/greece-wines",
+            "isSelected": false
+          },
+          {
+            "title": "France",
+            "itemCount": 8,
+            "url": "/white-wine/france-wines",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": {
+          "title": "more",
+          "url": "/white-wine?fh_maxdisplaynrvalues_origin_country=-1"
+        },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": "3317151f-faad-4f4d-8093-77e9844a2d8f",
+        "title": "Brand",
+        "facets": [
+          {
+            "title": "Jacob's Creek",
+            "itemCount": 15,
+            "url": "/white-wine/jacob27s-creek-range",
+            "isSelected": false
+          },
+          {
+            "title": "Rapaura Springs",
+            "itemCount": 4,
+            "url": "/white-wine/rapaura-springs-range",
+            "isSelected": false
+          },
+          {
+            "title": "Brown Brothers",
+            "itemCount": 5,
+            "url": "/white-wine/brown-brothers-range",
+            "isSelected": false
+          },
+          {
+            "title": "Hardys",
+            "itemCount": 6,
+            "url": "/white-wine/hardys-range",
+            "isSelected": false
+          },
+          {
+            "title": "Wolf Blass",
+            "itemCount": 4,
+            "url": "/white-wine/wolf-blass-range",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": {
+          "title": "more",
+          "url": "/white-wine?fh_maxdisplaynrvalues_brand=-1"
+        },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": "45c427af-0198-4cd7-80c2-f53d722ab2f4",
+        "title": "Price Range",
+        "facets": [
+          {
+            "title": "Below $10",
+            "itemCount": 38,
+            "url": "/white-wine/under-10-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$10 - $20",
+            "itemCount": 180,
+            "url": "/white-wine/10-to-20-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$20 - $30",
+            "itemCount": 206,
+            "url": "/white-wine/20-to-30-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$30 - $50",
+            "itemCount": 114,
+            "url": "/white-wine/30-to-50-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$50 - $100",
+            "itemCount": 9,
+            "url": "/white-wine/50-to-100-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$100 - $500",
+            "itemCount": 3,
+            "url": "/white-wine/100-to-500-dollars",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": { "title": null, "url": null },
+        "less": { "title": null, "url": null }
+      }
+    ],
+    "isProductCategory": true,
+    "requestId": "7b46f80b-1b00-4f21-8ed0-b88ef08ebce1"
+  },
+  {
+    "name": "Rosé",
+    "url": "/rose",
+    "navigationItems": [
+      {
+        "id": "545f8c0e-5a53-4ffe-8761-8e85c4a22be1",
+        "title": "Brand",
+        "facets": [
+          {
+            "title": "Jacob's Creek",
+            "itemCount": 7,
+            "url": "/rose/jacob27s-creek-range",
+            "isSelected": false
+          },
+          {
+            "title": "Rosie",
+            "itemCount": 4,
+            "url": "/rose/rosie-range",
+            "isSelected": false
+          },
+          {
+            "title": "Brown & Co",
+            "itemCount": 3,
+            "url": "/rose/brown-26-co-range",
+            "isSelected": false
+          },
+          {
+            "title": "6Ft6",
+            "itemCount": 2,
+            "url": "/rose/6ft6-range",
+            "isSelected": false
+          },
+          {
+            "title": "Bellarine Estate",
+            "itemCount": 2,
+            "url": "/rose/bellarine-estate-range",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": {
+          "title": "more",
+          "url": "/rose?fh_maxdisplaynrvalues_brand=-1"
+        },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": "d7dfb81f-2912-4ce5-9fba-8e706cb33cd0",
+        "title": "Region",
+        "facets": [
+          {
+            "title": "South Eastern Australia",
+            "itemCount": 12,
+            "url": "/rose/south-eastern-australia-region",
+            "isSelected": false
+          },
+          {
+            "title": "Sa",
+            "itemCount": 11,
+            "url": "/rose/sa-region",
+            "isSelected": false
+          },
+          {
+            "title": "Provence",
+            "itemCount": 10,
+            "url": "/rose/provence-region",
+            "isSelected": false
+          },
+          {
+            "title": "King Valley",
+            "itemCount": 7,
+            "url": "/rose/king-valley-region",
+            "isSelected": false
+          },
+          {
+            "title": "Yarra Valley",
+            "itemCount": 7,
+            "url": "/rose/yarra-valley-region",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": {
+          "title": "more",
+          "url": "/rose?fh_maxdisplaynrvalues_region=-1"
+        },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": "8e114b6d-345f-41a9-b40b-3f84fabb40a1",
+        "title": "Country",
+        "facets": [
+          {
+            "title": "Australia",
+            "itemCount": 106,
+            "url": "/rose/australia-wines",
+            "isSelected": false
+          },
+          {
+            "title": "France",
+            "itemCount": 19,
+            "url": "/rose/france-wines",
+            "isSelected": false
+          },
+          {
+            "title": "New Zealand",
+            "itemCount": 9,
+            "url": "/rose/new-zealand-wines",
+            "isSelected": false
+          },
+          {
+            "title": "Italy",
+            "itemCount": 4,
+            "url": "/rose/italy-wines",
+            "isSelected": false
+          },
+          {
+            "title": "Portugal",
+            "itemCount": 2,
+            "url": "/rose/portugal-wines",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": {
+          "title": "more",
+          "url": "/rose?fh_maxdisplaynrvalues_origin_country=-1"
+        },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": "45c427af-0198-4cd7-80c2-f53d722ab2f4",
+        "title": "Price Range",
+        "facets": [
+          {
+            "title": "Below $10",
+            "itemCount": 9,
+            "url": "/rose/under-10-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$10 - $20",
+            "itemCount": 55,
+            "url": "/rose/10-to-20-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$20 - $30",
+            "itemCount": 59,
+            "url": "/rose/20-to-30-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$30 - $50",
+            "itemCount": 18,
+            "url": "/rose/30-to-50-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$50 - $100",
+            "itemCount": 1,
+            "url": "/rose/50-to-100-dollars",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": { "title": null, "url": null },
+        "less": { "title": null, "url": null }
+      }
+    ],
+    "isProductCategory": true,
+    "requestId": "c71478c7-3ec1-4c7f-bb05-6ee8991c4630"
+  },
+  {
+    "name": "Sparkling",
+    "url": "/sparkling",
+    "navigationItems": [
+      {
+        "id": "71303303-d60f-4b22-9165-8549375ebc95",
+        "title": "Region",
+        "facets": [
+          {
+            "title": "Champagne",
+            "itemCount": 32,
+            "url": "/sparkling/champagne-region",
+            "isSelected": false
+          },
+          {
+            "title": "King Valley",
+            "itemCount": 26,
+            "url": "/sparkling/king-valley-region",
+            "isSelected": false
+          },
+          {
+            "title": "Yarra Valley",
+            "itemCount": 14,
+            "url": "/sparkling/yarra-valley-region",
+            "isSelected": false
+          },
+          {
+            "title": "Tasmania",
+            "itemCount": 8,
+            "url": "/sparkling/tasmania-and-tasmania2f-tumbarumba-region",
+            "isSelected": false
+          },
+          {
+            "title": "Veneto",
+            "itemCount": 16,
+            "url": "/sparkling/veneto-region",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": {
+          "title": "more",
+          "url": "/sparkling?fh_maxdisplaynrvalues_region=-1"
+        },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": "bf7babf0-bdb3-4746-9ca5-03689b68fe38",
+        "title": "Grape Variety",
+        "facets": [
+          {
+            "title": "Prosecco",
+            "itemCount": 70,
+            "url": "/sparkling?grape_variety=prosecco",
+            "isSelected": false
+          },
+          {
+            "title": "Chardonnay",
+            "itemCount": 90,
+            "url": "/sparkling?grape_variety=chardonnay",
+            "isSelected": false
+          },
+          {
+            "title": "Pinot Noir",
+            "itemCount": 78,
+            "url": "/sparkling?grape_variety=pinot20noir",
+            "isSelected": false
+          },
+          {
+            "title": "White Blends",
+            "itemCount": 34,
+            "url": "/sparkling?grape_variety=white20blends;white20blend",
+            "isSelected": false
+          },
+          {
+            "title": "Moscato",
+            "itemCount": 13,
+            "url": "/sparkling?grape_variety=moscato",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": {
+          "title": "more",
+          "url": "/sparkling?fh_maxdisplaynrvalues_grape_variety=-1"
+        },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": "af0396b0-b0d9-4f98-8282-a405766baff9",
+        "title": "Country",
+        "facets": [
+          {
+            "title": "Australia",
+            "itemCount": 163,
+            "url": "/sparkling/australia-wines",
+            "isSelected": false
+          },
+          {
+            "title": "France",
+            "itemCount": 37,
+            "url": "/sparkling/france-wines",
+            "isSelected": false
+          },
+          {
+            "title": "Italy",
+            "itemCount": 24,
+            "url": "/sparkling/italy-wines",
+            "isSelected": false
+          },
+          {
+            "title": "Germany",
+            "itemCount": 7,
+            "url": "/sparkling/germany-wines",
+            "isSelected": false
+          },
+          {
+            "title": "Spain",
+            "itemCount": 5,
+            "url": "/sparkling/spain-wines",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": {
+          "title": "more",
+          "url": "/sparkling?fh_maxdisplaynrvalues_origin_country=-1"
+        },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": "0b72d355-29e9-46ac-a41f-bb0ee747fe09",
+        "title": "Brand",
+        "facets": [
+          {
+            "title": "Chandon",
+            "itemCount": 6,
+            "url": "/sparkling/chandon-range",
+            "isSelected": false
+          },
+          {
+            "title": "Moet & Chandon",
+            "itemCount": 4,
+            "url": "/sparkling/moet-26-chandon-range",
+            "isSelected": false
+          },
+          {
+            "title": "Yellowglen",
+            "itemCount": 6,
+            "url": "/sparkling/yellowglen-range",
+            "isSelected": false
+          },
+          {
+            "title": "Jacob's Creek",
+            "itemCount": 9,
+            "url": "/sparkling/jacob27s-creek-range",
+            "isSelected": false
+          },
+          {
+            "title": "Brown Brothers",
+            "itemCount": 16,
+            "url": "/sparkling/brown-brothers-range",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": {
+          "title": "more",
+          "url": "/sparkling?fh_maxdisplaynrvalues_brand=-1"
+        },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": "45c427af-0198-4cd7-80c2-f53d722ab2f4",
+        "title": "Price Range",
+        "facets": [
+          {
+            "title": "Below $10",
+            "itemCount": 31,
+            "url": "/sparkling/under-10-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$10 - $20",
+            "itemCount": 68,
+            "url": "/sparkling/10-to-20-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$20 - $30",
+            "itemCount": 79,
+            "url": "/sparkling/20-to-30-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$30 - $50",
+            "itemCount": 36,
+            "url": "/sparkling/30-to-50-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$50 - $100",
+            "itemCount": 16,
+            "url": "/sparkling/50-to-100-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$100 - $500",
+            "itemCount": 11,
+            "url": "/sparkling/100-to-500-dollars",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": { "title": null, "url": null },
+        "less": { "title": null, "url": null }
+      }
+    ],
+    "isProductCategory": true,
+    "requestId": "7dfe8a94-a6c7-4b09-8af6-64802c96a956"
+  },
+  {
+    "name": "Spirits & Premix",
+    "url": "/spirits",
+    "navigationItems": [
+      {
+        "id": "b3620d22-aac3-4c75-b0e6-d009ac87de8a",
+        "title": "Category",
+        "facets": [
+          {
+            "title": "Premix",
+            "itemCount": 735,
+            "url": "/spirits/premix",
+            "isSelected": false
+          },
+          {
+            "title": "Vodka",
+            "itemCount": 47,
+            "url": "/spirits/vodka",
+            "isSelected": false
+          },
+          {
+            "title": "Gin",
+            "itemCount": 183,
+            "url": "/spirits/gin",
+            "isSelected": false
+          },
+          {
+            "title": "Blended Scotch Whisky",
+            "itemCount": 32,
+            "url": "/spirits/blended-scotch-whisky",
+            "isSelected": false
+          },
+          {
+            "title": "Dark Rum",
+            "itemCount": 43,
+            "url": "/spirits/dark-rum",
+            "isSelected": false
+          },
+          {
+            "title": "Tequila",
+            "itemCount": 34,
+            "url": "/spirits/tequila",
+            "isSelected": false
+          },
+          {
+            "title": "Brandy",
+            "itemCount": 11,
+            "url": "/spirits/brandy",
+            "isSelected": false
+          },
+          {
+            "title": "White Spirit Premix",
+            "itemCount": 513,
+            "url": "/spirits/white-spirit-premix",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": {
+          "title": "more",
+          "url": "/spirits?fh_maxdisplaynrvalues_categories=-1"
+        },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": "c8f772ae-aac2-4137-8e32-0859c263fcc9",
+        "title": "Brand",
+        "facets": [
+          {
+            "title": "Billson's",
+            "itemCount": 60,
+            "url": "/spirits/billson27s-range",
+            "isSelected": false
+          },
+          {
+            "title": "Vodka Cruiser",
+            "itemCount": 48,
+            "url": "/spirits/vodka-cruiser-range",
+            "isSelected": false
+          },
+          {
+            "title": "Jack Daniels",
+            "itemCount": 42,
+            "url": "/spirits/jack-daniels-range",
+            "isSelected": false
+          },
+          {
+            "title": "Smirnoff",
+            "itemCount": 36,
+            "url": "/spirits/smirnoff-range",
+            "isSelected": false
+          },
+          {
+            "title": "Bundaberg",
+            "itemCount": 31,
+            "url": "/spirits/bundaberg-range",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": {
+          "title": "more",
+          "url": "/spirits?fh_maxdisplaynrvalues_brand=-1"
+        },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": "f8c18e07-6ee1-4c24-a43c-fcb9effa1893",
+        "title": "Country",
+        "facets": [
+          {
+            "title": "Australia",
+            "itemCount": 882,
+            "url": "/spirits/australia-spirits",
+            "isSelected": false
+          },
+          {
+            "title": "Scotland",
+            "itemCount": 88,
+            "url": "/spirits/scotland-spirits",
+            "isSelected": false
+          },
+          {
+            "title": "United States",
+            "itemCount": 79,
+            "url": "/spirits/united-states-spirits",
+            "isSelected": false
+          },
+          {
+            "title": "United Kingdom",
+            "itemCount": 45,
+            "url": "/spirits/united-kingdom-spirits",
+            "isSelected": false
+          },
+          {
+            "title": "Mexico",
+            "itemCount": 43,
+            "url": "/spirits/mexico-spirits",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": {
+          "title": "more",
+          "url": "/spirits?fh_maxdisplaynrvalues_origin_country=-1"
+        },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": "45c427af-0198-4cd7-80c2-f53d722ab2f4",
+        "title": "Price Range",
+        "facets": [
+          {
+            "title": "Below $10",
+            "itemCount": 205,
+            "url": "/spirits/under-10-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$10 - $20",
+            "itemCount": 85,
+            "url": "/spirits/10-to-20-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$20 - $30",
+            "itemCount": 196,
+            "url": "/spirits/20-to-30-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$30 - $50",
+            "itemCount": 171,
+            "url": "/spirits/30-to-50-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$50 - $100",
+            "itemCount": 489,
+            "url": "/spirits/50-to-100-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$100 - $500",
+            "itemCount": 196,
+            "url": "/spirits/100-to-500-dollars",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": { "title": null, "url": null },
+        "less": { "title": null, "url": null }
+      }
+    ],
+    "isProductCategory": true,
+    "requestId": "d03fd639-fb7c-4ec6-b554-ec735fdfce28"
+  },
+  {
+    "name": "Beer ",
+    "url": "/beer",
+    "navigationItems": [
+      {
+        "id": "0e4e3115-4853-4f19-99ff-b0b4f7c65ed1",
+        "title": "Type",
+        "facets": [
+          {
+            "title": "Craft",
+            "itemCount": 1176,
+            "url": "/beer/craft",
+            "isSelected": false
+          },
+          {
+            "title": "Imported",
+            "itemCount": 189,
+            "url": "/beer/imported",
+            "isSelected": false
+          },
+          {
+            "title": "Full Strength",
+            "itemCount": 163,
+            "url": "/beer/full-strength",
+            "isSelected": false
+          },
+          {
+            "title": "Mid Strength",
+            "itemCount": 50,
+            "url": "/beer/mid-strength",
+            "isSelected": false
+          },
+          {
+            "title": "Cider",
+            "itemCount": 169,
+            "url": "/beer/cider",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": {
+          "title": "more",
+          "url": "/beer?fh_maxdisplaynrvalues_categories=-1"
+        },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": "7065c20c-9186-4397-a94b-9942c313e37d",
+        "title": "Country",
+        "facets": [
+          {
+            "title": "Australia",
+            "itemCount": 1643,
+            "url": "/beer/australia-beer",
+            "isSelected": false
+          },
+          {
+            "title": "Germany",
+            "itemCount": 25,
+            "url": "/beer/germany-beer",
+            "isSelected": false
+          },
+          {
+            "title": "Japan",
+            "itemCount": 23,
+            "url": "/beer/japan-beer",
+            "isSelected": false
+          },
+          {
+            "title": "New Zealand",
+            "itemCount": 22,
+            "url": "/beer/new-zealand-beer",
+            "isSelected": false
+          },
+          {
+            "title": "Sweden",
+            "itemCount": 17,
+            "url": "/beer/sweden-beer",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": {
+          "title": "more",
+          "url": "/beer?fh_maxdisplaynrvalues_origin_country=-1"
+        },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": "885c0ada-bdc0-4c30-b4d5-2fa2011da7a4",
+        "title": "Brand",
+        "facets": [
+          {
+            "title": "Carlton",
+            "itemCount": 28,
+            "url": "/beer/carlton-range",
+            "isSelected": false
+          },
+          {
+            "title": "Great Northern",
+            "itemCount": 17,
+            "url": "/beer/great-northern-range",
+            "isSelected": false
+          },
+          {
+            "title": "Corona",
+            "itemCount": 4,
+            "url": "/beer/corona-range",
+            "isSelected": false
+          },
+          {
+            "title": "Victoria Bitter",
+            "itemCount": 13,
+            "url": "/beer/victoria-bitter-range",
+            "isSelected": false
+          },
+          {
+            "title": "Furphy",
+            "itemCount": 9,
+            "url": "/beer/furphy-range",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": {
+          "title": "more",
+          "url": "/beer?fh_maxdisplaynrvalues_brand=-1"
+        },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": "45c427af-0198-4cd7-80c2-f53d722ab2f4",
+        "title": "Price Range",
+        "facets": [
+          {
+            "title": "Below $10",
+            "itemCount": 567,
+            "url": "/beer/under-10-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$10 - $20",
+            "itemCount": 338,
+            "url": "/beer/10-to-20-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$20 - $30",
+            "itemCount": 276,
+            "url": "/beer/20-to-30-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$30 - $50",
+            "itemCount": 100,
+            "url": "/beer/30-to-50-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$50 - $100",
+            "itemCount": 471,
+            "url": "/beer/50-to-100-dollars",
+            "isSelected": false
+          },
+          {
+            "title": "$100 - $500",
+            "itemCount": 75,
+            "url": "/beer/100-to-500-dollars",
+            "isSelected": false
+          }
+        ],
+        "url": null,
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": true,
+        "more": { "title": null, "url": null },
+        "less": { "title": null, "url": null }
+      }
+    ],
+    "isProductCategory": true,
+    "requestId": "bae7682a-63ee-4a41-b5c7-2f88e170e7ac"
+  },
+  {
+    "name": "Specials",
+    "url": "/specials",
+    "navigationItems": [
+      {
+        "id": null,
+        "title": "Catalogue",
+        "facets": [],
+        "url": "/specials/catalogue",
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": false,
+        "more": { "title": null, "url": null },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": null,
+        "title": "All Specials",
+        "facets": [],
+        "url": "/specials/all-specials",
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": false,
+        "more": { "title": null, "url": null },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": null,
+        "title": "Red Wine Specials",
+        "facets": [],
+        "url": "/specials/red-wine-specials",
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": false,
+        "more": { "title": null, "url": null },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": null,
+        "title": "Rose Wine Specials",
+        "facets": [],
+        "url": "/specials/rose-wine-specials",
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": false,
+        "more": { "title": null, "url": null },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": null,
+        "title": "White Wine Specials",
+        "facets": [],
+        "url": "/specials/white-wine-specials",
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": false,
+        "more": { "title": null, "url": null },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": null,
+        "title": "Sparkling Wine Specials",
+        "facets": [],
+        "url": "/specials/sparkling-wine-specials",
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": false,
+        "more": { "title": null, "url": null },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": null,
+        "title": "Spirit Specials",
+        "facets": [],
+        "url": "/specials/spirit-specials",
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": false,
+        "more": { "title": null, "url": null },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": null,
+        "title": "Beer Specials",
+        "facets": [],
+        "url": "/specials/beer-specials",
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": false,
+        "more": { "title": null, "url": null },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": null,
+        "title": "Pre-Mixed Drink Specials",
+        "facets": [],
+        "url": "/specials/pre-mixed-specials",
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": false,
+        "more": { "title": null, "url": null },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": null,
+        "title": "Bundles",
+        "facets": [],
+        "url": "/specials/bundles",
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": false,
+        "more": { "title": null, "url": null },
+        "less": { "title": null, "url": null }
+      },
+      {
+        "id": null,
+        "title": "",
+        "facets": [],
+        "url": "/specials/bundles",
+        "isSelected": false,
+        "isMultiSelect": false,
+        "isCollapsed": false,
+        "isMegaMenu": false,
+        "more": { "title": null, "url": null },
+        "less": { "title": null, "url": null }
+      }
+    ],
+    "isProductCategory": false,
+    "requestId": null
+  },
+  {
+    "name": "Lower For Longer",
+    "url": "/lower-for-longer",
+    "navigationItems": [],
+    "isProductCategory": false,
+    "requestId": null
+  }
+]

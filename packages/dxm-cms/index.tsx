@@ -1,4 +1,3 @@
-import * as React from "react";
 
 // component exports
-export * from "./contentstack/CmsUtil"; 
+export * from "./contentstack/index"; 
