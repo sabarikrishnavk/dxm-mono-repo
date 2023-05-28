@@ -52,16 +52,7 @@ type GetEntryByUrl = {
 const renderOption = {
     span: (node: any, next: any) => next(node.children),
 };
-// export const getAllEntries = async (): Promise<AllEntries> => {
-//     const response: AllEntries = (await Stack.getEntry({
-//         contentTypeUid: 'page',
-//         referenceFieldPath: undefined,
-//         jsonRtePath: undefined,
-//     })) as AllEntries;
-//     liveEdit &&
-//         response[0].forEach((entry) => addEditableTags(entry, 'page', true));
-//     return response[0] as AllEntries;
-// };
+
 export const getEntryByUrl = async (contentTypeUid: string,
     entryUrl: string,
     referenceFieldPath: string,
@@ -69,9 +60,11 @@ export const getEntryByUrl = async (contentTypeUid: string,
 
     return new Promise((resolve, reject) => {
         const blogQuery = Stack.ContentType(contentTypeUid).Query();
+
         if (referenceFieldPath) blogQuery.includeReference(referenceFieldPath);
-        blogQuery.includeOwner().toJSON();
+        blogQuery.includeEmbeddedItems().toJSON();
         const data = blogQuery.where('url', `${entryUrl}`).find();
+
         data.then(
             (result) => {
                 console.log('result :::----' + JSON.stringify(result));

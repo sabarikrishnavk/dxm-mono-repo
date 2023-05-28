@@ -14,7 +14,8 @@
     "react-dom": "^18.2.0",
     "dxm-ui-component": "workspace:*",
     "dxm-util": "workspace:*",
-    "dxm-cms": "workspace:*"
+    "dxm-cms": "workspace:*",
+    "redis": "^3.1.2"
   },
   "devDependencies": {
     "@types/node": "^17.0.12",
