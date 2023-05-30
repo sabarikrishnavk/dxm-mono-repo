@@ -3,30 +3,34 @@ import { Link } from './link.model';
 
 interface HeroBanner {
   $: any;
-  banner_title: string;
-  bg_color: string;
-  banner_image: Img;
-  text_color: string;
-  call_to_action: Link;
-  banner_description: string;
+  image: Img;
+  description: string;
+  link: Link;
+  overlaytext: string;
+  textclassname: string;
+  imageclassname: string;
 }
 
 interface HeroBannerProps {
-  herobanner: HeroBanner
+  cmsdata: HeroBanner,
+  componentdata: any
 }
 
 function HeroBannerComponent(herobannerProps: HeroBannerProps) {
-  const herobanner = herobannerProps.herobanner;
+  const herobanner = herobannerProps.cmsdata;
   return (
-    <div
-      className="hero-banner"
-      style={{
-        background: herobanner?.bg_color ? herobanner.bg_color : '',
-      }}>
-    </div>
+    <>
+      <div>Hero banner component </div>
+      <div
+        className="hero-banner"
+        style={{
+          background: herobanner?.textclassname ? herobanner.textclassname : '',
+        }}>
+        {herobanner?.overlaytext ? herobanner.overlaytext : ''}
+      </div>
+    </>
   );
 }
 
 export { HeroBannerComponent };
 export type { HeroBanner };
-

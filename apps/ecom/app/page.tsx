@@ -20,11 +20,9 @@ async function generateMetadata(
     title: resPage.title
   };
 }
-// const cmsPage: CMSPage = await getCMSPage('/liquorland/home');
-
 
 export default async function Page() {
-  // 
+  const cmsPage: CMSPage = await getCMSPage('/liquorland/home');
   const tenant = "site1";
   return (
 
@@ -32,7 +30,7 @@ export default async function Page() {
       <br />
       <a href="/product/2587160"> Product -  2587160</a>
       <br />
-      {/* <RenderPage tenant={tenant} cmsPage={cmsPage} />   */}
+      <RenderPage tenant={tenant} cmsPage={cmsPage} />
     </>
   );
 }  
