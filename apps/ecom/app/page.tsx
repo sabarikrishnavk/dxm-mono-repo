@@ -31,7 +31,9 @@ export default async function Page() {
       <br />
       <a href="/product/2587160"> Product -  2587160</a>
       <br />
-      <RenderPage tenant={tenant} cmsPage={cmsPage} />
+      <div className="boxShadowColor">
+        <RenderPage tenant={tenant} cmsPage={cmsPage} />
+      </div>
     </>
   );
 }  

@@ -1,9 +1,9 @@
 module.exports = {
-    theme: {
-      extend: {
-        colors: {
-          primary: "#FF0000",
-        },
+  theme: {
+    extend: {
+      colors: {
+        primary: '#FFFF00',
       },
     },
-  };
+  },
+};
