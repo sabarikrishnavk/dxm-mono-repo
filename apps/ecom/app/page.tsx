@@ -2,6 +2,7 @@ import { RenderPage } from "dxm-ui-component";
 import { Metadata, ResolvingMetadata } from 'next';
 import { CMSPage, getCMSPage } from 'dxm-cms';
 
+
 // export const metadata: Metadata = { 'title': 'Home Page', 'description': 'Home Page desc' };
 
 type Props = {

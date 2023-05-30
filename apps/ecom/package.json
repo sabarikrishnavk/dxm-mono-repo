@@ -15,9 +15,10 @@
     "dxm-ui-component": "workspace:*",
     "dxm-util": "workspace:*",
     "dxm-cms": "workspace:*",
-    "redis": "^3.1.2", 
-    "react-json-view": "^1.21.3",
-    "react-loading-skeleton": "^3.1.0"
+    "redis": "^3.1.2",
+    "postcss": "^8.4.21",
+    "autoprefixer": "^10.4.0",
+    "tailwindcss": "^3.2.1"
   },
   "devDependencies": {
     "@types/node": "^17.0.12",
@@ -26,10 +27,11 @@
     "eslint-config-custom": "workspace:*",
     "tsconfig": "workspace:*",
     "typescript": "^4.5.3",
+    "postcss": "^8.4.21",
+    "autoprefixer": "^10.4.0",
+    "tailwindcss": "^3.2.1",
     "dxm-ui-component": "workspace:*",
     "dxm-util": "workspace:*",
-    "dxm-cms": "workspace:*", 
-    "react-json-view": "^1.21.3",
-    "react-loading-skeleton": "^3.1.0"
+    "dxm-cms": "workspace:*"
   }
 }
