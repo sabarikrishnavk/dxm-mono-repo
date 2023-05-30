@@ -2,14 +2,14 @@ import * as React from "react";
 
 interface Props {
   children?: React.ReactNode;
-  theme?: String;
+  tenant?: String;
 }
 
-export const ProductCard = ({ children , theme }: Props) => {
+export const ProductCard = ({ children , tenant }: Props) => {
   return (
     <div>
 
-      <h1>Product-Card for {theme}</h1>
+      <h1>Product-Card for {tenant}</h1>
       {children}
     </div>
   );

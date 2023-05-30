@@ -1,5 +1,6 @@
 import * as contentstack from 'contentstack';
 import * as Utils from '@contentstack/utils';
+import { CMSPage } from '../model/content-types/page.model';
 
 import ContentstackLivePreview from '@contentstack/live-preview-utils';
 
@@ -49,10 +50,56 @@ type GetEntryByUrl = {
     referenceFieldPath: string[] | undefined;
     jsonRtePath: string[] | undefined;
 };
+
+
 const renderOption = {
     span: (node: any, next: any) => next(node.children),
 };
 
+
+export const getCMSPage = async (entryUrl: string): Promise<CMSPage> => {
+
+    const response: CMSPage[] = await getPageByUrl(
+        'ecom_marketing_page',
+        entryUrl, [], []);
+    // ['page_components.from_blog.featured_blogs'],
+    // [
+    //     'page_components.from_blog.featured_blogs.body',
+    //     'page_components.section_with_buckets.buckets.description',
+    //     'page_components.section_with_html_code.description',
+    // ]);
+
+    return response[0] as CMSPage;
+};
+export const getPageByUrl = async (
+    contentTypeUid: string,
+    entryUrl: string,
+    referenceFieldPath: string[],
+    jsonRtePath: string[]
+): Promise<CMSPage[]> => {
+    return new Promise((resolve, reject) => {
+        const blogQuery = Stack.ContentType(contentTypeUid).Query();
+        if (referenceFieldPath) blogQuery.includeReference(referenceFieldPath);
+        blogQuery.includeOwner().toJSON();
+        const data = blogQuery.where('url', `${entryUrl}`).find();
+        data.then(
+            (result) => {
+                // console.log('getPageByUrl : result :::----' + JSON.stringify(result));
+                jsonRtePath &&
+                    Utils.jsonToHTML({
+                        entry: result,
+                        paths: jsonRtePath,
+                        renderOption,
+                    });
+                resolve(result[0]);
+            },
+            (error) => {
+                console.error(error);
+                reject(error);
+            }
+        );
+    });
+}
 export const getEntryByUrl = async (contentTypeUid: string,
     entryUrl: string,
     referenceFieldPath: string,

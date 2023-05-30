@@ -1,13 +1,14 @@
-import { Button, Header, ProductCard, CartCard, Footer } from "dxm-ui-component";
+
 import { saveInCache, getCache } from "dxm-util";
 import { Metadata, ResolvingMetadata } from 'next';
+import { CMSPage, getCMSPage } from 'dxm-cms';
 
 type Props = {
   params: { id: string, slug: string };
   searchParams: { [key: string]: string | string[] | undefined };
 };
 
-export async function getData(id: string) {
+async function getData(id: string) {
   const key = "product-" + id;
   const response = await getCache(key);
 
@@ -28,7 +29,8 @@ export async function generateMetadata(
 
   const id = params.slug;//'2587160';
   const product = await getData(id);
-  console.log('product : ' + product.name);
+  const resPage: CMSPage = await getCMSPage('/liquorland/home');
+  console.log('product : ' + product.name + " :resPage : " + resPage.uid);
   // const pagejson = getEntryByUrl('ecom_marketing_page', '/liquorland/home', '', null);
   return {
     title: product.name
@@ -37,16 +39,10 @@ export async function generateMetadata(
 
 export default function Page() {
 
-  const theme = "site1";
+  const tenant = "liquorland";
   return (
     <>
-      <Header theme={theme} />
-      <Button />
       Product page
-      <ProductCard theme={theme} />
-      <CartCard theme={theme} />
-
-      <Footer theme={theme} />
 
     </>
   );

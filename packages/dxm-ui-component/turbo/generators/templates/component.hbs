@@ -2,14 +2,14 @@ import * as React from "react";
 
 interface Props {
   children?: React.ReactNode;
-  theme?: String;
+  tenant?: String;
 }
 
-export const {{ pascalCase name }} = ({ children , theme }: Props) => {
+export const {{ pascalCase name }} = ({ children , tenant }: Props) => {
   return (
     <div>
 
-      <h1>{{ name }} for {theme}</h1>
+      <h1>{{ name }} for {tenant}</h1>
       {children}
     </div>
   );

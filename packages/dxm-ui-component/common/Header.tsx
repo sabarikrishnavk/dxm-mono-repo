@@ -1,11 +1,14 @@
 
-import { HeaderProps } from "../model/HtmlElement"
+ 
+interface HeaderProps {
+  children?: React.ReactNode;
+  tenant?: String;
+}
 
-
-export const Header = ({ theme }: HeaderProps) => {
+export const Header = ({ tenant }: HeaderProps) => {
   return (
     <>
-      <div> Sample  {theme}</div>
+      <div> Sample  {tenant}</div>
     </>
   );
 };

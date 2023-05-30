@@ -9,6 +9,7 @@
     "generate:component": "turbo gen react-component"
   },
   "dependencies": {
+    "dxm-cms": "workspace:*",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -20,6 +21,7 @@
     "eslint-config-custom": "workspace:*",
     "react": "^17.0.2",
     "tsconfig": "workspace:*",
+    "dxm-cms": "workspace:*",
     "typescript": "^4.5.2"
   }
 }
