@@ -7,6 +7,7 @@ type Props = {
   params: { id: string, slug: string };
   searchParams: { [key: string]: string | string[] | undefined };
 };
+const env = process.env;
 
 async function getData(id: string) {
   const key = "product-" + id;
@@ -15,7 +16,7 @@ async function getData(id: string) {
   if (response) {
     return response;
   } else {
-    let productjson = await fetch('http://localhost:8080/product/' + id + '.json').then(res => res.json());
+    let productjson = await fetch(env.NEXT_PUBLIC_HOSTED_URL + '/product/' + id + '.json').then(res => res.json());
     let product = productjson.product;
     await saveInCache(key, product, 5);
     return product;
