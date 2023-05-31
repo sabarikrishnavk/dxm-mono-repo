@@ -1,7 +1,7 @@
-
 import { saveInCache, getCache } from "dxm-util";
 import { Metadata, ResolvingMetadata } from 'next';
 import { CMSPage, getCMSPage } from 'dxm-cms';
+import { getTheme, getTenant } from 'dxm-util';
 
 type Props = {
   params: { id: string, slug: string };
@@ -39,9 +39,9 @@ export async function generateMetadata(
 
 export default async function Page({ params, searchParams }: Props) {
 
-  const env = process.env;
-  const tenant = env.NEXT_PUBLIC_TENANT;
-  const theme = 'theme-' + tenant;
+
+  const tenant = getTenant();
+  const theme = getTheme();
   const id = params.slug;//'2587160';  
   const product = await getData(id);
   console.log('product : ' + product.name);

@@ -1,11 +1,11 @@
 import { RenderPage } from "dxm-ui-component";
 import { Metadata, ResolvingMetadata } from 'next';
 import { CMSPage, getCMSPage } from 'dxm-cms';
+import { getTheme, getTenant } from 'dxm-util';
 
 
 // export const metadata: Metadata = { 'title': 'Home Page', 'description': 'Home Page desc' };
 
-const env = process.env;
 type Props = {
   params: { id: string };
   pageUrl: string;
@@ -25,8 +25,8 @@ async function generateMetadata(
 
 export default async function Page() {
   const cmsPage: CMSPage = await getCMSPage('/liquorland/home');
-  const tenant = env.NEXT_PUBLIC_TENANT;
-  const theme = 'theme-' + tenant;
+  const tenant = getTenant();
+  const theme = getTheme();
   return (
 
     <>
