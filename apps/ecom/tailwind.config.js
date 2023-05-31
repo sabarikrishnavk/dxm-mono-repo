@@ -1,24 +1,57 @@
-// tailwind.config.js
-const getPreset = () => {
-  if (!process.env.NEXT_PUBLIC_TENANT)
-    return [require(`./tailwind/default/preset.js`)];
-
-  try {
-    return [require(`./tailwind/${process.env.NEXT_PUBLIC_TENANT}/preset.js`)];
-  } catch (err) {
-    return [require(`./tailwind/default/preset.js`)];
-  }
-};
+function withOpacity(variableName) {
+  return ({ opacityValue }) => {
+    if (opacityValue !== undefined) {
+      return `rgba(var(${variableName}), ${opacityValue})`;
+    }
+    return `rgb(var(${variableName}))`;
+  };
+}
 
 module.exports = {
-  presets: getPreset(),
+  theme: {
+    extend: {
+      textColor: {
+        skin: {
+          base: withOpacity('--color-text-base'),
+          muted: withOpacity('--color-text-muted'),
+          inverted: withOpacity('--color-text-inverted'),
+        },
+      },
+      backgroundColor: {
+        skin: {
+          fill: withOpacity('--color-fill'),
+          'button-accent': withOpacity('--color-button-accent'),
+          'button-accent-hover': withOpacity('--color-button-accent-hover'),
+          'button-muted': withOpacity('--color-button-muted'),
+        },
+      },
+      gradientColorStops: {
+        skin: {
+          hue: withOpacity('--color-fill'),
+        },
+      },
+    },
+  },
+  variants: {
+    extend: {},
+  },
   content: [
     './app/**/*.{js,ts,jsx,tsx}',
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
   ],
-  theme: {
-    extend: {},
-  },
   plugins: [],
 };
+
+// module.exports = {
+//   presets: getPreset(),
+//   content: [
+//     './app/**/*.{js,ts,jsx,tsx}',
+//     './pages/**/*.{js,ts,jsx,tsx}',
+//     './components/**/*.{js,ts,jsx,tsx}',
+//   ],
+//   theme: {
+//     extend: {},
+//   },
+//   plugins: [],
+// };
