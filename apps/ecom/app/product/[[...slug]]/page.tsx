@@ -40,10 +40,10 @@ export async function generateMetadata(
 
 export default function Page() {
 
-  const tenant = "liquorland";
+  const tenant = env.NEXT_PUBLIC_TENANT;
   return (
     <>
-      Product page
+      Product page for {tenant}
 
     </>
   );

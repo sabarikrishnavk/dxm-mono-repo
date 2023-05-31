@@ -5,6 +5,7 @@ import { CMSPage, getCMSPage } from 'dxm-cms';
 
 // export const metadata: Metadata = { 'title': 'Home Page', 'description': 'Home Page desc' };
 
+const env = process.env;
 type Props = {
   params: { id: string };
   pageUrl: string;
@@ -24,7 +25,7 @@ async function generateMetadata(
 
 export default async function Page() {
   const cmsPage: CMSPage = await getCMSPage('/liquorland/home');
-  const tenant = "site1";
+  const tenant = env.NEXT_PUBLIC_TENANT;
   return (
 
     <>
