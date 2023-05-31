@@ -5,11 +5,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const env = process.env;
-  const tenant = env.NEXT_PUBLIC_TENANT;
   return (
-
-    <html lang="en" data-theme="{tenant}" >
+    <html lang="en">
       <body>{children}</body>
     </html >
   );
