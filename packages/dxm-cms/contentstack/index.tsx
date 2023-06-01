@@ -1,6 +1,7 @@
 import * as contentstack from 'contentstack';
 import * as Utils from '@contentstack/utils';
 import { CMSPage } from '../model/content-types/page.model';
+import { getTenant } from 'dxm-util';
 
 import ContentstackLivePreview from '@contentstack/live-preview-utils';
 
@@ -58,10 +59,12 @@ const renderOption = {
 
 
 export const getCMSPage = async (entryUrl: string): Promise<CMSPage> => {
+    const cmsurl = '/' + getTenant() + entryUrl;
+    console.log("get CMS page : " + cmsurl);
 
     const response: CMSPage[] = await getPageByUrl(
         'ecom_marketing_page',
-        entryUrl, [], []);
+        cmsurl, [], []);
     // ['page_components.from_blog.featured_blogs'],
     // [
     //     'page_components.from_blog.featured_blogs.body',
