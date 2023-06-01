@@ -22,7 +22,7 @@ interface eComHeaderProps {
   componentdata?: any;
 }
 
-async function EComHeaderComponent(ecomHeaderProps: eComHeaderProps) {
+function EComHeaderComponent(ecomHeaderProps: eComHeaderProps) {
   const header = ecomHeaderProps.header;
   const imageUrl = header?.headerrow ? header?.headerrow.logo.url : '';
   const imageAlt = getTenant();

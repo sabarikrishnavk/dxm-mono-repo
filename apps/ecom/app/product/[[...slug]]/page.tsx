@@ -47,7 +47,6 @@ export default async function Page({ params, searchParams }: Props) {
       <div className="sm:m-6 space-y-6">
         <div className={`${tenant ? `${theme}` : 'theme-default'}`}>
           <div className=" relative bg-skin-fill max-w-4xl mx-auto overflow-hidden sm:rounded-2xl">
-            <img className="absolute inset-0 h-full w-full object-cover opacity-30" src="https://images.unsplash.com/photo-1613217784112-e0e197be6a0b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80&sat=-100" alt="People working on laptops" />
             <div className="absolute inset-0 bg-gradient-to-br from-skin-hue via-skin-hue to-transparent opacity-90"></div>
             <div className="relative max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
               <h2 className="text-3xl font-extrabold text-skin-base sm:text-4xl">
