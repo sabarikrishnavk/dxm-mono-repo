@@ -30,16 +30,12 @@ export async function generateMetadata(
 
   const id = params.slug;//'2587160';
   const product = await getData(id);
-  const resPage: CMSPage = await getCMSPage('/liquorland/home');
-  // const pagejson = getEntryByUrl('ecom_marketing_page', '/liquorland/home', '', null);
   return {
     title: product.name
   };
 }
 
 export default async function Page({ params, searchParams }: Props) {
-
-
   const tenant = getTenant();
   const theme = getTheme();
   const id = params.slug;//'2587160';  

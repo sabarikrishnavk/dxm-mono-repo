@@ -1,6 +1,6 @@
 import { RenderPage } from "dxm-ui-component";
 import { Metadata, ResolvingMetadata } from 'next';
-import { CMSPage, getCMSPage } from 'dxm-cms';
+import { CMSPage, getCMSPage, getEcomHeader } from 'dxm-cms';
 import { getTheme, getTenant } from 'dxm-util';
 
 
@@ -25,6 +25,7 @@ async function generateMetadata(
 
 export default async function Page() {
   const cmsPage: CMSPage = await getCMSPage('/home');
+
   const tenant = getTenant();
   const theme = getTheme();
   return (

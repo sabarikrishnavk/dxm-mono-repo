@@ -1,9 +1,10 @@
 import * as contentstack from 'contentstack';
 import * as Utils from '@contentstack/utils';
-import { CMSPage } from '../model/content-types/page.model';
+import { CMSPage } from '../model/content-types/cmspage.model';
 import { getTenant } from 'dxm-util';
 
 import ContentstackLivePreview from '@contentstack/live-preview-utils';
+import { eComHeader } from '../model/content-types/header.model';
 
 const envConfig = process.env;
 
@@ -65,15 +66,21 @@ export const getCMSPage = async (entryUrl: string): Promise<CMSPage> => {
     const response: CMSPage[] = await getPageByUrl(
         'ecom_marketing_page',
         cmsurl, [], []);
-    // ['page_components.from_blog.featured_blogs'],
-    // [
-    //     'page_components.from_blog.featured_blogs.body',
-    //     'page_components.section_with_buckets.buckets.description',
-    //     'page_components.section_with_html_code.description',
-    // ]);
+    const cmsPage = response[0];
+    const header = await getEcomHeader(cmsPage.ecom_header[0].uid);
 
-    return response[0] as CMSPage;
+    cmsPage.header = header;
+    return cmsPage;
 };
+
+export const getEcomHeader = async (entryUid: string): Promise<eComHeader> => {
+    console.log("getEcomHeader  : " + entryUid);
+    const response: eComHeader = await getEntriesById(
+        'ecom_header',
+        entryUid, [], []);
+    return response as eComHeader;
+
+}
 export const getPageByUrl = async (
     contentTypeUid: string,
     entryUrl: string,
@@ -81,10 +88,10 @@ export const getPageByUrl = async (
     jsonRtePath: string[]
 ): Promise<CMSPage[]> => {
     return new Promise((resolve, reject) => {
-        const blogQuery = Stack.ContentType(contentTypeUid).Query();
-        if (referenceFieldPath) blogQuery.includeReference(referenceFieldPath);
-        blogQuery.includeOwner().toJSON();
-        const data = blogQuery.where('url', `${entryUrl}`).find();
+        const query = Stack.ContentType(contentTypeUid).Query();
+        if (referenceFieldPath) query.includeReference(referenceFieldPath);
+        query.includeOwner().toJSON();
+        const data = query.where('url', `${entryUrl}`).find();
         data.then(
             (result) => {
                 // console.log('getPageByUrl : result :::----' + JSON.stringify(result));
@@ -103,28 +110,29 @@ export const getPageByUrl = async (
         );
     });
 }
-export const getEntryByUrl = async (contentTypeUid: string,
-    entryUrl: string,
-    referenceFieldPath: string,
-    jsonRtePath: any): Promise<GetEntryByUrl> => {
 
+
+
+export const getEntriesById = async (
+    contentTypeUid: string,
+    entryUid: string,
+    referenceFieldPath: string[],
+    jsonRtePath: string[]): Promise<eComHeader> => {
     return new Promise((resolve, reject) => {
-        const blogQuery = Stack.ContentType(contentTypeUid).Query();
 
-        if (referenceFieldPath) blogQuery.includeReference(referenceFieldPath);
-        blogQuery.includeEmbeddedItems().toJSON();
-        const data = blogQuery.where('url', `${entryUrl}`).find();
-
+        const query = Stack.ContentType(contentTypeUid).Entry(entryUid);
+        query.includeOwner().toJSON();
+        const data = query.fetch();
         data.then(
             (result) => {
-                console.log('result :::----' + JSON.stringify(result));
+                // console.log("result : " + JSON.stringify(result));
                 jsonRtePath &&
                     Utils.jsonToHTML({
                         entry: result,
                         paths: jsonRtePath,
                         renderOption,
                     });
-                resolve(result[0]);
+                resolve(result);
             },
             (error) => {
                 console.error(error);
@@ -132,4 +140,4 @@ export const getEntryByUrl = async (contentTypeUid: string,
             }
         );
     });
-}
+} 

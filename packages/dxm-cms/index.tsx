@@ -12,5 +12,5 @@ export * from './model/fields/xlink.model';
 
 
 export * from './model/content-types/header.model';
-export * from './model/content-types/page.model';
+export * from './model/content-types/cmspage.model';
 
