@@ -82,4 +82,4 @@ Learn more about the power of Turborepo:
 
 pnpm add --save-dev jest babel-jest @testing-library/react @testing-library/jest-dom identity-obj-proxy react-test-renderer jest-environment-jsdom
 
-
+pnpm add jest babel-jest @testing-library/react @testing-library/jest-dom identity-obj-proxy react-test-renderer jest-environment-jsdom
