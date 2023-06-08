@@ -10,6 +10,7 @@
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "turbo run build --filter=main... && changeset publish",
+    "storybook": "turbo run storybook",
     "test": "turbo run test",
     "test:watch": "turbo run test:watch"
   },

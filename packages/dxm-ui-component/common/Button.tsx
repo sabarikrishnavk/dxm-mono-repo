@@ -1,4 +1,3 @@
-"use client";
 interface Props {
   primary?: boolean;
   size?: "small" | "large";

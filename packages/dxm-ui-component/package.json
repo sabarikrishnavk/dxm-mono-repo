@@ -21,7 +21,6 @@
     "eslint-config-custom": "workspace:*",
     "react": "^17.0.2",
     "tsconfig": "workspace:*",
-    "dxm-cms": "workspace:*",
     "typescript": "^4.5.2"
   }
 }
