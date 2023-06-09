@@ -1,6 +1,5 @@
-import { RenderPage } from "dxm-ui-component";
 import { Metadata, ResolvingMetadata } from 'next';
-import { CMSPage, getCMSPage, getEcomHeader } from 'dxm-cms';
+import { RenderPage, CMSPage, getCMSPage, getEcomHeader } from 'dxm-cms';
 import { getTheme, getTenant } from 'dxm-util';
 
 

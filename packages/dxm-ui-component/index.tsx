@@ -1,7 +1,6 @@
 import * as React from "react";
 
 // component exports
-export * from './component/RenderPage';
 export * from "./product/ProductCard";
 export * from "./cart/CartCard";
 export * from "./common/Button";
