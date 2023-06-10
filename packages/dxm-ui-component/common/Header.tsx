@@ -1,4 +1,3 @@
-import React from 'react';
 
 import { Button } from './Button';
 import './header.css';
@@ -17,7 +16,7 @@ interface HeaderProps {
 export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => (
   <header>
     <div className="storybook-header">
-      <div> 
+      <div>
         <h1>Acme</h1>
       </div>
       <div>

@@ -1,10 +1,9 @@
 import * as contentstack from 'contentstack';
 import * as Utils from '@contentstack/utils';
-import { CMSPage } from '../model/content-types/cmspage.model';
+import { CMSPage, eComHeader } from 'dxm-ui-component';
 import { getTenant } from 'dxm-util';
 
 import ContentstackLivePreview from '@contentstack/live-preview-utils';
-import { eComHeader } from '../model/content-types/header.model';
 
 const envConfig = process.env;
 

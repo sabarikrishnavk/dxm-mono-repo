@@ -1,6 +1,5 @@
 import { saveInCache, getCache } from "dxm-util";
 import { Metadata, ResolvingMetadata } from 'next';
-import { CMSPage, getCMSPage } from 'dxm-cms';
 import { getTheme, getTenant } from 'dxm-util';
 
 type Props = {

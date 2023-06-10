@@ -1,5 +1,5 @@
 import * as React from "react";
-import { CMSPage, EComHeaderComponent, HeroBannerComponent } from '../model';
+import { CMSPage, EComHeaderComponent, HeroBannerComponent } from 'dxm-ui-component'
 
 interface Props {
   tenant?: String;

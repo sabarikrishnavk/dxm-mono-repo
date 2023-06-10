@@ -1,6 +1,6 @@
 
 
-import { getTenant } from 'dxm-util';
+
 import { Img } from '../fields/image.model';
 import { Menu } from '../fields/menu.model';
 import { xLink } from '../fields/xlink.model';
@@ -25,7 +25,8 @@ interface eComHeaderProps {
 function EComHeaderComponent(ecomHeaderProps: eComHeaderProps) {
   const header = ecomHeaderProps.header;
   const imageUrl = header?.headerrow ? header?.headerrow.logo.url : '';
-  const imageAlt = getTenant();
+  // const imageAlt = getTenant();
+  const imageAlt = '';
   return (
     <>
       <p className="mt-4 text-lg leading-6 text-skin-muted">Header component : </p>
