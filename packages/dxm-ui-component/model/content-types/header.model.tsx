@@ -1,6 +1,7 @@
 
 
 
+import { User } from '../Component';
 import { Img } from '../fields/image.model';
 import { Menu } from '../fields/menu.model';
 import { xLink } from '../fields/xlink.model';
@@ -41,8 +42,13 @@ function EComHeaderComponent(ecomHeaderProps: eComHeaderProps) {
     </>
   );
 }
-
- const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => (
+interface HeaderProps {
+  user?: User;
+  onLogin: () => void;
+  onLogout: () => void;
+  onCreateAccount: () => void;
+}
+const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => (
   <header>
     <div className="storybook-header">
       <div>
@@ -54,12 +60,12 @@ function EComHeaderComponent(ecomHeaderProps: eComHeaderProps) {
             <span className="welcome">
               Welcome, <b>{user.name}</b>!
             </span>
-            <Button size="small" onClick={onLogout} label="Log out" />
+            {/* <Button size="small" onClick={onLogout} label="Log out" /> */}
           </>
         ) : (
           <>
-            <Button size="small" onClick={onLogin} label="Log in" />
-            <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
+            {/* <Button size="small" onClick={onLogin} label="Log in" />
+            <Button primary size="small" onClick={onCreateAccount} label="Sign up" /> */}
           </>
         )}
       </div>

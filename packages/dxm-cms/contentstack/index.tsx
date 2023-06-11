@@ -1,6 +1,6 @@
 import * as contentstack from 'contentstack';
 import * as Utils from '@contentstack/utils';
-import { CMSPage, eComHeader } from 'dxm-ui-component';
+import { CMSPage, EComHeader } from 'dxm-ui-component';
 import { getTenant } from 'dxm-util';
 
 import ContentstackLivePreview from '@contentstack/live-preview-utils';
@@ -72,12 +72,12 @@ export const getCMSPage = async (entryUrl: string): Promise<CMSPage> => {
     return cmsPage;
 };
 
-export const getEcomHeader = async (entryUid: string): Promise<eComHeader> => {
+export const getEcomHeader = async (entryUid: string): Promise<EComHeader> => {
     console.log("getEcomHeader  : " + entryUid);
-    const response: eComHeader = await getEntriesById(
+    const response: EComHeader = await getEntriesById(
         'ecom_header',
         entryUid, [], []);
-    return response as eComHeader;
+    return response as EComHeader;
 
 }
 export const getPageByUrl = async (
@@ -116,7 +116,7 @@ export const getEntriesById = async (
     contentTypeUid: string,
     entryUid: string,
     referenceFieldPath: string[],
-    jsonRtePath: string[]): Promise<eComHeader> => {
+    jsonRtePath: string[]): Promise<EComHeader> => {
     return new Promise((resolve, reject) => {
 
         const query = Stack.ContentType(contentTypeUid).Entry(entryUid);

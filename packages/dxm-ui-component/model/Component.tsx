@@ -13,5 +13,9 @@ class BaseComponentProps {
     children?: React.ReactNode;
     tenant?: String;
 }
-
-export { ComponentTypes, BaseComponentProps };
+class User {
+    id?: string;
+    name?: string;
+    role?: string;
+}
+export { ComponentTypes, User, BaseComponentProps };
