@@ -24,7 +24,7 @@ export const RenderPage = ({ tenant, cmsPage }: Props) => {
       {cmsPage?.page_components.map((component, key) => {
         if (component.herobanner) {
           return (
-            <HeroBannerComponent cmsdata={component.herobanner} key={`component-${key}`} componentdata={''} />
+            <HeroBannerComponent structure={component.herobanner} key={`component-${key}`} data={''} />
           )
         }
 

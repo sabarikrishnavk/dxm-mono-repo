@@ -1,14 +1,16 @@
+import { BaseComponentProps } from '../model';
 
-interface FooterProps {
-  children?: React.ReactNode;
-  tenant?: String;
+
+interface FooterProps extends BaseComponentProps {
+    dynamicText: string;
 }
 
-export const Footer = ({ children, tenant }: FooterProps) => {
-  return (
-    <div>
-      <h1>Footer for {tenant}</h1>
-      {children}
-    </div>
-  );
+export const FooterComponent = ({ children, tenant }: FooterProps) => {
+    return (
+        <div>
+            <h1>Footer for {tenant}</h1>
+            {children}
+        </div>
+    );
 };
+export default FooterComponent;

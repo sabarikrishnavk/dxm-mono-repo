@@ -1,24 +1,25 @@
+import { BaseComponentProps } from '../Component';
 import { Img } from './image.model';
 import { Link } from './link.model';
 import Image from 'next/image';
 
-interface HeroBanner {
+class HeroBanner {
   $: any;
-  image: Img;
-  description: string;
-  link: Link;
-  overlaytext: string;
-  textclassname: string;
-  imageclassname: string;
+  image?: Img;
+  description?: string;
+  link?: Link;
+  overlaytext?: string;
+  textclassname?: string;
+  imageclassname?: string;
 }
 
-interface HeroBannerProps {
-  cmsdata: HeroBanner,
-  componentdata: any
+interface HeroBannerProps extends BaseComponentProps {
+  // structure: HeroBanner, //content structure
+  // data: any//content data
 }
 
 function HeroBannerComponent(herobannerProps: HeroBannerProps) {
-  const herobanner = herobannerProps.cmsdata;
+  const herobanner = herobannerProps.structure;
   const imageUrl = herobanner?.image ? herobanner.image.url : '';
   const imageAlt = herobanner?.overlaytext ? herobanner.overlaytext : '';
   return (
@@ -44,5 +45,4 @@ function HeroBannerComponent(herobannerProps: HeroBannerProps) {
   );
 }
 
-export { HeroBannerComponent };
-export type { HeroBanner };
+export { HeroBannerComponent, HeroBanner }; 

@@ -1,6 +1,7 @@
 
 // component exports
 
+export * from './Component';
 
 export * from './fields/herobanner.model';
 export * from './fields/image.model';
